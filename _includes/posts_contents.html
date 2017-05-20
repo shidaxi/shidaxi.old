@@ -1,0 +1,15 @@
+<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <h4>Recent Posts</h4>
+    <ul>
+      {% for post in site.posts limit:10 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+      <li>
+        <a href="/blog/">All Posts &gt;&gt;</a>
+      </li>
+    </ul>
+  </aside>
+</div>
