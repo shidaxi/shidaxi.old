@@ -62,3 +62,6 @@ exclude:
 encoding: utf-8
 paginate: 10
 paginate_path: "/blog/:num/"
+cdn_base: "http://shixi-pub.oss-cn-shanghai.aliyuncs.com"
+cdn_image_base: "http://shixi-pub.oss-cn-shanghai.aliyuncs.com"
+
