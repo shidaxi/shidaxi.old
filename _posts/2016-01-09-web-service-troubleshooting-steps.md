@@ -34,13 +34,17 @@ devops作为服务的owner和maintainer，经常会遇到一些帮助请求，�
    ```
 
 3. 确认网络层是否联通\(路由是否可达\)
+
    ```bash
 
    # 【注意】ping仅供参考，如果对端不响应ICMP包，一样ping不通，但不一定路由不可达
    $ ping 10.18.19.28 
     $ ping www.dianrong.com
+
    ```
+
 4. 确认传输层\(TCP层\)是否可达，即能建立连接
+
    ```bash
 
    # 结果包含 Connected to说明建连成功
@@ -48,18 +52,23 @@ devops作为服务的owner和maintainer，经常会遇到一些帮助请求，�
     Trying 219.153.73.205... 
    Connected to 5beb99f12df722a0.cdn.jiashule.com. 
    Escape character is '^]'.
+
    ```
+
 5. 确认应用层\(HTTP层\)是否工作，即服务端能返回HTTP响应\(Response\)
+
    ```bash
 
    $ curl https://www.dianrong.com/api/v2/profile 
 
    # 加-v参数获取更详细的 SSL握手信息 和 http header信息 
    $ curl -v https://www.dianrong.com/api/v2/profile
- 
+
    ```
 
-   
-6. 如果是技术人员，可以打开浏览器的debug工具条查看一下  
-7. 如果还定位不到原因，将如上步骤获取的信息截图发送给devops来做排查
+1. 如果是技术人员，可以打开浏览器的debug工具条查看一下  
+
+1. 如果还定位不到原因，将如上步骤获取的信息截图发送给devops来做排查
+
+
 
