@@ -140,7 +140,6 @@ Description: configurable talking cow
  available to replace it with some other creatures (Tux, the BSD
  daemon, dragons, and a plethora of animals, from a turkey to
  an elephant in a snake).
-
 ```
 
 #### 如何查看一个命令属于哪个包？
@@ -174,14 +173,13 @@ $ sudo apt-get upgrade
 #### 如何清理apt的包cache？
 
 ```
-
 $ sudo apt-get autoclean
 ```
 
 #### 如何只下载不安装？
 
 ```
-$ sudo apt-get download 
+$ sudo apt-get download
 ```
 
 #### 如何查看一个包的依赖有哪些？
@@ -213,10 +211,6 @@ $ sudo apt-get remove curl
 ```
 $ sudo apt-get purge curl
 ```
-
-
-
-
 
 参考：
 
